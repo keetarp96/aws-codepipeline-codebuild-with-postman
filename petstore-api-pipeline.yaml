@@ -4,20 +4,20 @@ Description: Code pipeline for automated api functional testing
 Parameters:
 
   GitHubRepositoryName:
-    Type: String
+    Type: aws-codepipeline-codebuild-with-postman
     Description: GitHub repository name.
     MinLength: 1
     MaxLength: 100
   GitHubUser:
-    Type: String
+    Type: Keetarp@96
   GitHubBranch:
-    Type: String
+    Type: master
   GitHubToken:
-    Type: String
+    Type: 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
     Description: repository token.
     NoEcho: true
   BucketRoot:
-    Type: String
+    Type: postmanincodebuild
     Description: bucket containing project artifacts e.g. postman config files, etc.
     MinLength: 1
     MaxLength: 100
